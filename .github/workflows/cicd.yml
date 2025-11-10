@@ -76,4 +76,7 @@ jobs:
 
       - name: Run PyTest unit tests
         run: |
-          pytest .
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-django
+
